@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.aboutme-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #02011B;
+    color: white;
+}
+.about-me {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.name span {
+    color: #FFF;
+font-family: "Ravi Prakash";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.name h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: linear-gradient(90deg, #FFF 0%, #126CBB 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.position h2 {
+    display: flex;
+width: 863px;
+flex-direction: column;
+font-family: "Alfa Slab One";
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: linear-gradient(90deg, #126CBB 0%, #FFF 43%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.description p {
+    display: flex;
+    padding-top: 10px;
+width: 699px;
+height: auto;
+flex-direction: column;
+justify-content: center;
+color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.cont {
+display: inline-flex;
+padding: 10px 16px ;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+background: rgba(123, 194, 255, 0.38);
+cursor: pointer;
+}
+
+.cont a {
+    color: #FFF;
+    text-decoration: none;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.download {
+    display: inline-flex;
+    padding: 10px 16px ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.download img {
+    width: 34.854px;
+height: 28.518px;
+stroke-width: 4px;
+stroke: var(--sds-color-icon-neutral-on-neutral);
+}
+.download a {
+    text-decoration: none;
+    color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    padding: 0 10px;
+}
+
+.about-me-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-image img {
+    width: 350px;
+}
+
+/* Top small light glow */
+.top {
+    position: absolute;
+    width: 66px;
+    height: auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(25px);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Big oval spotlight */
+.lht {
+    color: #ffffff;
+    position: absolute;
+    width: 452px;
+    transform: translate(-50%, -50%);
+    filter: blur(0px);
+    z-index: 1;
+    opacity: 0.35;
+}
+
+/* Person silhouette */
+.shadow {
+    position: relative;
+    width: 350px;
+    height: auto;
+    z-index: 2;
+}
