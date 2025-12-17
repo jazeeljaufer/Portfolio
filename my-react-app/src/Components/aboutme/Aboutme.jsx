@@ -26,9 +26,22 @@ const Aboutme = () => {
         </div>
     </div>
      <div className="about-me-image">
-            <div className="top"></div>
-            <div className="lht"></div>
-            <img src="/images/shadow.svg" alt="shadow" className="shadow" />
+            <img src="/images/img.png" alt="shadow" className="shadow" />
+            <div className="bg" id='facebook-about'>
+                <img src="/images/Facebook.svg" alt="facebook" />
+            </div>
+            <div className="bg" id='Mail-about'>
+                <img src="/images/Mail.svg" alt="mail" />
+            </div>
+            <div className="bg" id='Github-about'>
+                <img src="/images/Github.svg" alt="github" />
+            </div>
+            <div className="bg" id='Linkedin-about'>
+                <img src="/images/Linkedin.svg" alt="linkedin" />
+            </div>
+            <div className="bg" id='Instagram-about'>
+                <img src="/images/Instagram.svg" alt="instagram" />
+            </div>
         </div>
     </div>
     );

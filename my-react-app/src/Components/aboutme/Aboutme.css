@@ -1,22 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .aboutme-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    padding: 50px 100px;
     background-color: #02011B;
     color: white;
 }
+
 .about-me {
     width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .name {
     display: flex;
     flex-direction: row;
@@ -26,53 +29,53 @@
 
 .name span {
     color: #FFF;
-font-family: "Ravi Prakash";
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: "Ravi Prakash";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .name h1 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-background: linear-gradient(90deg, #FFF 0%, #126CBB 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(90deg, #FFF 0%, #126CBB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .position h2 {
     display: flex;
-width: 863px;
-flex-direction: column;
-font-family: "Alfa Slab One";
-font-size: 64px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-background: linear-gradient(90deg, #126CBB 0%, #FFF 43%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    width: 863px;
+    flex-direction: column;
+    font-family: "Alfa Slab One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(90deg, #126CBB 0%, #FFF 43%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .description p {
     display: flex;
     padding-top: 10px;
-width: 699px;
-height: auto;
-flex-direction: column;
-justify-content: center;
-color: #FFF;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    width: 699px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .buttons {
@@ -83,28 +86,28 @@ line-height: normal;
 }
 
 .cont {
-display: inline-flex;
-padding: 10px 16px ;
-justify-content: center;
-align-items: center;
-border-radius: 20px;
-background: rgba(123, 194, 255, 0.38);
-cursor: pointer;
+    display: inline-flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(123, 194, 255, 0.38);
+    cursor: pointer;
 }
 
 .cont a {
     color: #FFF;
     text-decoration: none;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .download {
     display: inline-flex;
-    padding: 10px 16px ;
+    padding: 10px 16px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -118,18 +121,19 @@ line-height: normal;
 
 .download img {
     width: 34.854px;
-height: 28.518px;
-stroke-width: 4px;
-stroke: var(--sds-color-icon-neutral-on-neutral);
+    height: 28.518px;
+    stroke-width: 4px;
+    stroke: var(--sds-color-icon-neutral-on-neutral);
 }
+
 .download a {
     text-decoration: none;
     color: #FFF;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     padding: 0 10px;
 }
 
@@ -144,34 +148,60 @@ line-height: normal;
     width: 350px;
 }
 
-/* Top small light glow */
-.top {
+.bg {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: radial-gradient(circle at 10% 0%, #10254a 0%, #02051a 70%);
+    box-shadow:
+        0 0 0 1px rgba(159, 199, 255, 0.4),
+        0 10px 25px rgba(0, 0, 0, 0.6),
+        inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
     position: absolute;
-    width: 66px;
+    z-index: 3;
+}
+
+.bg img {
+    width: auto;
     height: auto;
-    top: 0;
+    max-width: 24px;
+    max-height: 24px;
+    object-fit: contain;
+}
+
+#facebook-about {
+    top: 120px;
+    left: 0px;
+}
+
+#Mail-about {
+    top: 40px;
+    left: 50px;
+}
+
+#Github-about {
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    filter: blur(25px);
-    z-index: 1;
-    opacity: 0.8;
 }
 
-/* Big oval spotlight */
-.lht {
-    color: #ffffff;
-    position: absolute;
-    width: 452px;
-    transform: translate(-50%, -50%);
-    filter: blur(0px);
-    z-index: 1;
-    opacity: 0.35;
+#Linkedin-about {
+    top: 40px;
+    right: 40px;
 }
 
-/* Person silhouette */
+#Instagram-about {
+    top: 120px;
+    right: 0px;
+}
+
 .shadow {
     position: relative;
-    width: 350px;
+    width: 5000px;
     height: auto;
     z-index: 2;
 }
