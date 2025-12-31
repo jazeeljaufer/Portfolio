@@ -1,7 +1,8 @@
 footer {
     position:relative;
     width: 100%;
-    padding: 10px 40px;
+    padding: 30px 40px;
+    margin-top: 50px;
     text-align: center;
     color: #e4e8ff;
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -41,6 +42,9 @@ footer {
         0 10px 25px rgba(0, 0, 0, 0.6),
         inset 0 0 0 1px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .box img {
@@ -61,4 +65,54 @@ footer {
 footer p {
     margin: 0;
     opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+    .media hr {
+        display: none;
+    }
+    
+    footer {
+        padding: 30px 20px;
+    }
+    
+    .media {
+        gap: 12px;
+    }
+    
+    .box {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .box img {
+        width: 18px;
+        height: 18px;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 15px;
+        font-size: 12px;
+    }
+    
+    .media {
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .box {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .box img {
+        width: 16px;
+        height: 16px;
+    }
+
+    
 }

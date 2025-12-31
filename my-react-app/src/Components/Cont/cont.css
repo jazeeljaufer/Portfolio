@@ -1,0 +1,260 @@
+.contact {
+    margin-top: 20px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+}
+
+.robot-hello {
+    animation: waveHello 2s ease-in-out infinite;
+    transform-origin: center bottom;
+}
+
+@keyframes waveHello {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(-15deg) scale(1.05);
+    }
+    50% {
+        transform: rotate(15deg) scale(1.05);
+    }
+    75% {
+        transform: rotate(-10deg) scale(1.02);
+    }
+}
+
+.cont-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-txt p {
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0;
+    letter-spacing: 0.3px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cont-mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.m-box {
+    display: inline-flex;
+    height: 60px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.25);
+}
+
+
+.m-box h3 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(90deg, #126CBB 0%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cont-mail:hover .m-box h3 {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.m-box img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cont-mail:hover .m-box img {
+    transform: scale(1.15) rotate(5deg);
+    filter: brightness(1.3);
+}
+
+.signature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.signature img {
+    max-width: 300px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.signature-text {
+    color: #FFF;
+    font-family: 'Brush Script MT', cursive, sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #126CBB 0%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1024px) {
+    .contact {
+        gap: 40px;
+        padding: 50px 30px;
+    }
+
+    .contact img {
+        width: 400px;
+    }
+
+    .cont-txt p {
+        font-size: 22px;
+    }
+
+    .m-box h3 {
+        font-size: 18px;
+    }
+
+    .signature-text {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+        margin-top: 40px;
+    }
+
+    .contact img {
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .cont-txt {
+        max-width: 100%;
+        gap: 25px;
+    }
+
+    .cont-txt p {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .cont-mail {
+        flex-direction: row;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .m-box {
+        height: 50px;
+        padding: 0px 20px;
+    }
+
+    .m-box h3 {
+        font-size: 16px;
+    }
+
+    .m-box img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .signature {
+        margin-top: 30px;
+    }
+
+    .signature-text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .contact img {
+        width: 250px;
+    }
+
+    .cont-txt p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .m-box {
+        padding: 18px 20px;
+    }
+
+    .m-box h3 {
+        font-size: 14px;
+        letter-spacing: 0.3px;
+    }
+
+    .m-box img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .signature {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .signature-text {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+}

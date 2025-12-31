@@ -1,0 +1,156 @@
+.education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.qualify {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.qualification {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.quali-cont {
+    width: 688px;
+height: auto;
+padding: 10px;
+background-color: rgba(217, 217, 217, 0.29);
+border: 13px solid ;
+border-image: linear-gradient(to right, white, #126CBB) 100;
+justify-content: center;
+align-items: center;
+}
+.arw {
+    width: 680px;
+    display: flex;
+    align-items: center;
+    gap: 80%;
+}
+
+.arw img {
+    width: 20px;
+height: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .education {
+        padding: 0 60px;
+    }
+
+    .qualify {
+        padding: 40px 60px;
+        gap: 60px;
+    }
+
+    .qualify img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .quali-cont {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .arw {
+        width: 100%;
+        gap: 90%;
+    }
+
+    .head h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .education {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .qualify {
+        padding: 30px 40px;
+        gap: 40px;
+    }
+
+    .qualify img {
+        display: none;
+    }
+
+    .qualification {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .quali-cont {
+        width: 100%;
+        max-width: 100%;
+        border-width: 10px;
+    }
+
+    .arw {
+        width: 100%;
+        gap: 80%;
+    }
+
+    .head {
+        padding: 8px 24px;
+        margin: 8px;
+    }
+
+    .head h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .education {
+        padding: 0 20px;
+    }
+
+    .qualify {
+        margin-top: 30px;
+        padding: 20px 15px;
+        gap: 30px;
+    }
+
+    .qualification {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .quali-cont {
+        padding: 15px;
+        border-width: 8px;
+    }
+
+    .arw {
+        gap: 80%;
+    }
+
+    .arw img {
+        width: 18px;
+        height: 14px;
+    }
+
+    .head {
+        padding: 6px 20px;
+        margin: 6px;
+    }
+
+    .head h3 {
+        font-size: 18px;
+    }
+}
