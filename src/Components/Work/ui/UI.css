@@ -102,15 +102,13 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
     
     .ui .lap {
         width: 100%;
-        max-width: 400px;
-        height: auto;
+        height: 400px;
         object-fit: cover;
     }
     
     .ui-details {
         align-items: center;
         text-align: center;
-        width: 100%;
     }
     
     .ui-details h2 {
@@ -119,13 +117,21 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
     
     .ui-details p {
         width: 100%;
+        max-width: 100%;
         text-align: center;
         height: auto;
         padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details span {
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     
     .tools {
-        width: 100%;
         visibility: hidden;
     }
 }
@@ -138,7 +144,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
     
     .ui .lap {
         width: 100%;
-        max-width: 350px;
+        max-width: 100%;
         height: auto;
     }
     
@@ -155,9 +161,27 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
     
     .ui-details p {
         width: 100%;
+        max-width: 100%;
         font-size: 16px;
         text-align: center;
         height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details span {
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details a {
+        width: auto;
+        max-width: 100%;
+        white-space: nowrap;
     }
     
     .tools {
@@ -166,14 +190,38 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
     
 }
 
-@media (max-width: 480px) {
-    .ui .lap {
+@media (max-width: 600px) {
+    .ui-details p {
         width: 100%;
         max-width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
     }
     
-    .ui-details {
+    .ui {
+        gap: 20px;
+    }
+    
+    .ui-details span {
         width: 100%;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details a {
+        width: auto;
+        max-width: 100%;
+        white-space: nowrap;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ui .lap {
+        max-width: 100%;
     }
     
     .ui-details h2 {
@@ -181,12 +229,28 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
     }
     
     .ui-details p {
-        width: 100%;
         font-size: 14px;
     }
     
-    .tools {
+    .ui-details span {
         width: 100%;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details a {
+        width: auto;
+        max-width: 100%;
+        white-space: nowrap;
+        font-size: 12px;
+        word-break: keep-all;
+    }
+    
+    .tools {
+        visibility: hidden;
     }
 }
 
