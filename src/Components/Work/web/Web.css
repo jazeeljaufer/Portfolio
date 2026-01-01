@@ -85,14 +85,16 @@
     }
     
     .web .lap {
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
         object-fit: cover;
     }
     
     .w-details {
         align-items: center;
         text-align: center;
+        width: 100%;
     }
     
     .w-details h2 {
@@ -109,7 +111,8 @@
     }
     
     .lang {
-        max-width: 500px;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -147,7 +150,7 @@
     }
     
     .lang {
-        width: 70%;
+        width: 100%;
         max-width: 100%;
         flex-wrap: wrap;
         padding: 12px;
@@ -182,7 +185,12 @@
 
 @media (max-width: 480px) {
     .web .lap {
+        width: 100%;
         max-width: 100%;
+    }
+    
+    .w-details {
+        width: 100%;
     }
     
     .w-details h2 {
@@ -190,10 +198,12 @@
     }
     
     .w-details p {
+        width: 100%;
         font-size: 14px;
     }
     
     .lang {
+        width: 100%;
         visibility: hidden;
     }
 }

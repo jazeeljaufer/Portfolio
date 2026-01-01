@@ -101,14 +101,16 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
     }
     
     .ui .lap {
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
         object-fit: cover;
     }
     
     .ui-details {
         align-items: center;
         text-align: center;
+        width: 100%;
     }
     
     .ui-details h2 {
@@ -123,6 +125,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
     }
     
     .tools {
+        width: 100%;
         visibility: hidden;
     }
 }
@@ -165,7 +168,12 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
 
 @media (max-width: 480px) {
     .ui .lap {
+        width: 100%;
         max-width: 100%;
+    }
+    
+    .ui-details {
+        width: 100%;
     }
     
     .ui-details h2 {
@@ -173,7 +181,12 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49
     }
     
     .ui-details p {
+        width: 100%;
         font-size: 14px;
+    }
+    
+    .tools {
+        width: 100%;
     }
 }
 
