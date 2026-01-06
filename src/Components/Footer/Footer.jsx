@@ -23,7 +23,8 @@ const Footer = () => {
             </a>
             <hr />
         </div>
-        <p>© 2025 Jazeel Jaufer. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Jazeel Jaufer. All Rights Reserved.</p>
+      
     </footer>
   )
 }   
