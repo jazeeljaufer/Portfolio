@@ -1,0 +1,203 @@
+.Worktogether {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+    margin: 40px;
+}
+
+.left {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Worktogether img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 670px;
+    max-width: 500px;
+    padding: 30px;
+
+}
+
+.right input,
+.right textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    margin: 20px;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    align-items: center;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.right input:focus,
+.right textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.right input:hover,
+.right textarea:hover {
+    border-color: #b0b0b0;
+}
+
+.right textarea {
+    min-height: 150px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.right button {
+    margin: 20px;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    padding: 27px 179px 28px 180px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.30) 0%, rgba(18, 108, 187, 0.30) 100%);
+}
+
+.right button:hover {
+    border-color: #b0b0b0;
+
+}
+
+@media (max-width: 1024px) {
+    .Worktogether {
+        padding: 0px 50px;
+        margin: 30px;
+        flex-direction: column;
+    }
+
+    .Worktogether img {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+
+    .right input,
+    .right textarea {
+        width: 400px;
+    }
+
+    .right button {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Worktogether {
+        flex-direction: column;
+        padding: 0px 30px;
+        margin: 20px;
+    }
+
+    .left {
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .Worktogether img {
+        width: 0px;
+        max-width: 400px;
+        height: opx;
+        visibility: hidden;
+    }
+
+    .right {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .right input,
+    .right textarea {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    .right button {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .Worktogether {
+        padding: 0px 15px;
+        margin: 15px;
+    }
+
+    .left {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .Worktogether img {
+        max-width: 100%;
+        visibility: hidden;
+    }
+
+    .right {
+        padding: 15px;
+    }
+
+    .right input,
+    .right textarea {
+        padding: 12px 15px;
+        font-size: 14px;
+        margin: 12px 0;
+        height: auto;
+    }
+
+    .right textarea {
+        min-height: 120px;
+    }
+
+    .right button {
+        padding: 12px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .tit-head h3 {
+        font-size: 1.5rem;
+    }
+
+    .title p {
+        font-size: 0.9rem;
+    }
+}

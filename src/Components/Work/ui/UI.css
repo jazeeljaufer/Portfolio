@@ -1,0 +1,256 @@
+.ui {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.ui .lap {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    align-items: flex-start;
+}
+
+.ui-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ui-details h2 {
+    font-family: Inter;
+font-size: 32px;
+font-style: italic;
+font-weight: 800;
+line-height: normal;
+background: linear-gradient(90deg, #FFF 0%, #126CBB 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+   
+}
+
+.ui-details p {
+    color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    text-align: left;
+    display: flex;
+    width: 592px;
+    padding: 20px 0px;
+}
+
+.ui-details span {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-top: auto;
+}
+
+.tools {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.tool {
+    display: flex;
+width: 60px;
+height: 60px;
+padding: auto;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 39.63%, rgba(8, 49, 85, 0.15) 100%);
+
+}
+.tools img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.ui-details a {
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .ui {
+        flex-direction: column-reverse;
+    }
+    
+    .ui .lap {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .ui-details {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .ui-details h2 {
+        text-align: center;
+    }
+    
+    .ui-details p {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details span {
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .tools {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .ui {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+    
+    .ui .lap {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .ui-details {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .ui-details h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .ui-details p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details span {
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details a {
+        width: auto;
+        max-width: 100%;
+        white-space: nowrap;
+    }
+    
+    .tools {
+        visibility: hidden;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .ui-details p {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .ui {
+        gap: 20px;
+    }
+    
+    .ui-details span {
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details a {
+        width: auto;
+        max-width: 100%;
+        white-space: nowrap;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ui .lap {
+        max-width: 100%;
+    }
+    
+    .ui-details h2 {
+        font-size: 24px;
+    }
+    
+    .ui-details p {
+        font-size: 14px;
+    }
+    
+    .ui-details span {
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    .ui-details a {
+        width: auto;
+        max-width: 100%;
+        white-space: nowrap;
+        font-size: 12px;
+        word-break: keep-all;
+    }
+    
+    .tools {
+        visibility: hidden;
+    }
+}
+
